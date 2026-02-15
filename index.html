@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -17,15 +17,55 @@
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<style>
+.testimonials {
+  padding: 60px 0;
+  background: #111;
+}
+
+.section-header h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.testimonial-item {
+  background: #222;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  height: 100%;
+}
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 15px auto;
+  object-fit: cover;
+}
+
+.stars i {
+  color: gold;
+}
+
+.swiper {
+  padding-bottom: 50px;
+}
+</style>
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="bootstrap.min.css" rel="stylesheet">
-  <link href="bootstrap-icons.css" rel="stylesheet">
-  <link href="glightbox.min.css" rel="stylesheet">
-  <link href="remixicon.css" rel="stylesheet">
-  <link href="swiper-bundle.min.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="./assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="./bootstrap.min.css" rel="stylesheet">
+  <link href="./bootstrap-icons.css" rel="stylesheet">
+  <link href="./glightbox.min.css" rel="stylesheet">
+  <link href="./remixicon.css" rel="stylesheet">
+  <link href="./swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="./style.css" rel="stylesheet">
@@ -33,35 +73,37 @@
 </head>
 
 <body>
-    <div class="container-fluid" style="background-color: #5e0000;">
-      <div class="row">
-          <div class="col-sm-6 col-md-6">
-              <div style="padding: 10px; text-align: center; background-color: #ffd300;">
-                  <a href="https://wa.me/917742070091/?text=Please%20help%20me!" style="color: #000000; font-size: 20px; font-weight: 600;">
-                    <i class="bi bi-whatsapp"></i> +91-7742070091</a>
-                          
-              </div>
-  
-          </div>
-          <div class="col-sm-6 col-md-6">
-              <marquee onmouseover="stop()" onmouseout="start()"
-                  style="font-size: 18px; padding-top: 10px; color: #ffffff;font-weight: 600;">
-                  एक कॉल आपकी जिंदगी बदल सकती है! अपने जीवन में खुशी लाने के लिए हमें कॉल करें। +91-7742070091
-              </marquee>
-          </div>
+  <div class="container-fluid" style="background-color: #5e0000;">
+    <div class="row">
+      <div class="col-sm-6 col-md-6">
+        <div style="padding: 10px; text-align: center; background-color: #ffd300;">
+          <a href="https://wa.me/917742070091/?text=Please%20help%20me!"
+            style="color: #000000; font-size: 20px; font-weight: 600;">
+            <i class="bi bi-whatsapp"></i> +91-7742070091</a>
+
+        </div>
+
       </div>
+      <div class="col-sm-6 col-md-6">
+        <marquee onmouseover="stop()" onmouseout="start()"
+          style="font-size: 18px; padding-top: 10px; color: #ffffff;font-weight: 600;">
+          एक कॉल आपकी जिंदगी बदल सकती है! अपने जीवन में खुशी लाने के लिए हमें कॉल करें। +91-7742070091
+        </marquee>
+      </div>
+    </div>
   </div>
-  
+
   <!-- end top-head section -->
- 
+
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="tel:+91-7742070091" class="logo d-flex align-items-center">
-        <img src="./images/logo.png" alt="World Famous Astrologer Priyanka Devi Ji +91-7742070091" style="border: 2px solid #000000;">
-      
+        <img src="./images/logo.png" alt="World Famous Astrologer Priyanka Devi Ji +91-7742070091"
+          style="border: 2px solid #000000;">
+
       </a>
 
       <nav id="navbar" class="navbar">
@@ -71,12 +113,12 @@
           <li><a class="nav-link scrollto" href="#values">Best Services</a></li>
           <li><a class="nav-link scrollto" href="#topservices">Top Services</a></li>
           <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
-         
-    
+
+
 
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <li><a class="getstarted scrollto" href="tel:+91-7742070091">
-            <i class="bi bi-telephone-fill" style="font-size: 20px;"></i> +91-7742070091</a></li>
+              <i class="bi bi-telephone-fill" style="font-size: 20px;"></i> +91-7742070091</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -85,19 +127,20 @@
   </header>
   <!-- End Header -->
 
-   <!-- bottom header line start -->
+  <!-- bottom header line start -->
 
-	<div style="background: #5e0000; text-align: center">
-		<div
-			style="color: #ffffff; font-size: 18px; border-top: 2px solid #ffffff; border-bottom: 2px solid #ffffff; padding-bottom: 6px; padding-top: 6px; font-weight: 600;">
-			
-			<div style="padding: 5px 0;">
-        रोने से किसी को पाया नही जाता खोने से किसी को भुलाया नहीं जाता कॉल कीजिये समस्या है तो उसका समाधान भी है एक फोन कॉल आपका जीवन बदल सकती हैं। +91-7742070091
+  <div style="background: #5e0000; text-align: center">
+    <div
+      style="color: #ffffff; font-size: 18px; border-top: 2px solid #ffffff; border-bottom: 2px solid #ffffff; padding-bottom: 6px; padding-top: 6px; font-weight: 600;">
+
+      <div style="padding: 5px 0;">
+        रोने से किसी को पाया नही जाता खोने से किसी को भुलाया नहीं जाता कॉल कीजिये समस्या है तो उसका समाधान भी है एक फोन
+        कॉल आपका जीवन बदल सकती हैं। +91-7742070091
       </div>
-		</div>
-	</div>
+    </div>
+  </div>
 
-   <!-- bottom header line end -->
+  <!-- bottom header line end -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero d-flex align-items-center">
@@ -110,19 +153,19 @@
 
   <!-- bottom header line start -->
 
-	<div style="background: #ffd301; text-align: center">
-		<div
-			style="color: #000000; font-size: 18px; border-top: 2px solid #ffffff;; border-bottom: 2px solid #ffffff;; padding-top: 10px; font-weight: 600;">
-			
-			<marquee behavior="alternate" direction="" style="padding: 5px 0;">
-				समस्या कैसी भी घबराये नहीं तुरंत हमसे संपर्क करे और समाधान पाए !! 
-								रूठे प्रेमी प्रेमिका को मनाना, पति पत्नी में अनबन, मनचाहा खोया प्यार पाए, 
-								पारिवारिक समस्या, माता पिता को शादी के लिए राज़ी करना, सौतन से छुटकारा आदि !! 
-								सभी समस्याओ का हल सिर्फ एक फ़ोन कॉल +91-7742070091</marquee>
-		</div>
-	</div>
+  <div style="background: #ffd301; text-align: center">
+    <div
+      style="color: #000000; font-size: 18px; border-top: 2px solid #ffffff;; border-bottom: 2px solid #ffffff;; padding-top: 10px; font-weight: 600;">
 
-   <!-- bottom header line end -->
+      <marquee behavior="alternate" direction="" style="padding: 5px 0;">
+        समस्या कैसी भी घबराये नहीं तुरंत हमसे संपर्क करे और समाधान पाए !!
+        रूठे प्रेमी प्रेमिका को मनाना, पति पत्नी में अनबन, मनचाहा खोया प्यार पाए,
+        पारिवारिक समस्या, माता पिता को शादी के लिए राज़ी करना, सौतन से छुटकारा आदि !!
+        सभी समस्याओ का हल सिर्फ एक फ़ोन कॉल +91-7742070091</marquee>
+    </div>
+  </div>
+
+  <!-- bottom header line end -->
 
 
   <main id="main">
@@ -134,43 +177,44 @@
 
           <div class="col-lg-6 d-flex flex-column justify-content-center">
             <div class="content">
-         
+
               <p style="font-size:18px; color:#ffffff;line-height:30px;text-align: justify">
                 <b>Astrologer Priyanka Devi Ji</b>
-                is a India astrologer who has made people to believe in 
-                astrology to serve people. Many people come to her 
-                for the solution and under her guidance they 
-                are able to get solution to their problems. 
-                She is a person that has made people to believe in 
-                professional astrology just to make life better. 
-                Her clientele is spreading across the world 
-                just because of her work. The true predictions, 
-                genuine astrological solution and affordable services 
+                is a India astrologer who has made people to believe in
+                astrology to serve people. Many people come to her
+                for the solution and under her guidance they
+                are able to get solution to their problems.
+                She is a person that has made people to believe in
+                professional astrology just to make life better.
+                Her clientele is spreading across the world
+                just because of her work. The true predictions,
+                genuine astrological solution and affordable services
                 have made her popular.
-            </p>
-            <p style="font-size:18px; color:#ffffff;line-height:30px;text-align: justify">
-              <b>Astrologer Priyanka Devi Ji</b>
-              always provides the desired solution to every person. 
-              Her services are worth and for free for everyone. 
-              Thus for a person it is always better to use some 
-              astrological services suggested by her. Her free 
-              service helps a person to never worry about money. 
-              She has received many awards in the field of astrology.
-          </p>
+              </p>
+              <p style="font-size:18px; color:#ffffff;line-height:30px;text-align: justify">
+                <b>Astrologer Priyanka Devi Ji</b>
+                always provides the desired solution to every person.
+                Her services are worth and for free for everyone.
+                Thus for a person it is always better to use some
+                astrological services suggested by her. Her free
+                service helps a person to never worry about money.
+                She has received many awards in the field of astrology.
+              </p>
               <div class="text-center text-lg-start">
                 <a href="tel:+91-7742070091"
                   class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                   <span><i class="bi bi-phone-vibrate"></i> +91-7742070091</span>
-                   
-               
+                  <span><i class="bi bi-phone-vibrate"></i> +91-7742070091</span>
+
+
                 </a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-6 d-flex align-items-center">
-            <img src="./images/divorce.jpg" class="img-fluid" alt="World Famous Astrologer Priyanka Devi Ji +91-7742070091" 
-            style="border: 5px solid #ffcc00; box-shadow: 0px 5px 5px 0px black;">
+            <img src="./images/divorce.jpg" class="img-fluid"
+              alt="World Famous Astrologer Priyanka Devi Ji +91-7742070091"
+              style="border: 5px solid #ffcc00; box-shadow: 0px 5px 5px 0px black;">
           </div>
 
         </div>
@@ -186,7 +230,7 @@
 
         <header class="section-header">
           <h2 style="color: #ffffff;">Our Best Services</h2>
-       
+
         </header>
 
         <div class="row">
@@ -196,13 +240,14 @@
               <img src="./images/Love-Marriage.jpg" class="img-fluid" alt="Love Marriage Specialist">
               <h3>Love Marriage Specialist</h3>
               <p style="color: #000000; font-weight: 600;">
-                Astrology can make it easy to tackle Marriage Problem 
-                and one can remove all the issues that have created 
+                Astrology can make it easy to tackle Marriage Problem
+                and one can remove all the issues that have created
                 problems for them and make their married life blissful.</p>
-                <div>
-                  <a href="tel:+91-7742070091" style="border: 2px solid #ffffff; padding: 7px 20px; background-color: #5e0000; color: #ffffff; font-weight: 600;">
-                    <i class="bi bi-telephone-fill"></i> +91-7742070091</a>
-                </div>
+              <div>
+                <a href="tel:+91-7742070091"
+                  style="border: 2px solid #ffffff; padding: 7px 20px; background-color: #5e0000; color: #ffffff; font-weight: 600;">
+                  <i class="bi bi-telephone-fill"></i> +91-7742070091</a>
+              </div>
             </div>
           </div>
 
@@ -211,14 +256,15 @@
               <img src="./images/Love-pr.jpg" class="img-fluid" alt="Love Problem Specialist">
               <h3>Love Problem Specialist</h3>
               <p style="color: #000000; font-weight: 600;">
-                It is not easy to come out from the Love Problem 
-                but with the use of astrology, we could provide 
-                a better path to a relationship that 
+                It is not easy to come out from the Love Problem
+                but with the use of astrology, we could provide
+                a better path to a relationship that
                 keeps love between them.</p>
-                <div>
-                  <a href="tel:+91-7742070091" style="border: 2px solid #ffffff; padding: 7px 20px; background-color: #5e0000; color: #ffffff; font-weight: 600;">
-                    <i class="bi bi-telephone-fill"></i> +91-7742070091</a>
-                </div>
+              <div>
+                <a href="tel:+91-7742070091"
+                  style="border: 2px solid #ffffff; padding: 7px 20px; background-color: #5e0000; color: #ffffff; font-weight: 600;">
+                  <i class="bi bi-telephone-fill"></i> +91-7742070091</a>
+              </div>
             </div>
           </div>
 
@@ -227,14 +273,15 @@
               <img src="./images/divorcee.jpg" class="img-fluid" alt="Divorce Problems">
               <h3>Divorce Problems</h3>
               <p style="color: #000000; font-weight: 600;">
-                Whether a person wishes to take a divorce 
-                or prevent divorce using astrology for divorce 
-                is always a good thing which saves the relationships 
+                Whether a person wishes to take a divorce
+                or prevent divorce using astrology for divorce
+                is always a good thing which saves the relationships
                 and makes the wish come true.</p>
-                <div>
-                  <a href="tel:+91-7742070091" style="border: 2px solid #ffffff; padding: 7px 20px; background-color: #5e0000; color: #ffffff; font-weight: 600;">
-                    <i class="bi bi-telephone-fill"></i> +91-7742070091</a>
-                </div>
+              <div>
+                <a href="tel:+91-7742070091"
+                  style="border: 2px solid #ffffff; padding: 7px 20px; background-color: #5e0000; color: #ffffff; font-weight: 600;">
+                  <i class="bi bi-telephone-fill"></i> +91-7742070091</a>
+              </div>
             </div>
           </div>
 
@@ -247,14 +294,15 @@
               <img src="./images/Childless.jpg" class="img-fluid" alt="Childless Problems">
               <h3>Childless Problems</h3>
               <p style="color: #000000; font-weight: 600;">
-                Child always brings happiness in the family. 
-                But it isn’t possible that every married couple 
-                will bless the child soon. Previously we 
+                Child always brings happiness in the family.
+                But it isn’t possible that every married couple
+                will bless the child soon. Previously we
                 can find many children in single family.</p>
-                <div>
-                  <a href="tel:+91-7742070091" style="border: 2px solid #ffffff; padding: 7px 20px; background-color: #5e0000; color: #ffffff; font-weight: 600;">
-                    <i class="bi bi-telephone-fill"></i> +91-7742070091</a>
-                </div>
+              <div>
+                <a href="tel:+91-7742070091"
+                  style="border: 2px solid #ffffff; padding: 7px 20px; background-color: #5e0000; color: #ffffff; font-weight: 600;">
+                  <i class="bi bi-telephone-fill"></i> +91-7742070091</a>
+              </div>
             </div>
           </div>
 
@@ -263,14 +311,15 @@
               <img src="./images/family-dis.jpg" class="img-fluid" alt="Family Problem Solution">
               <h3>Family Problem Solution</h3>
               <p style="color: #000000; font-weight: 600;">
-                When you want to get rid of Family Problem 
-                then without wasting time use some powerful astrological 
-                remedies which are good to keep peace 
+                When you want to get rid of Family Problem
+                then without wasting time use some powerful astrological
+                remedies which are good to keep peace
                 and positivity at home and members.</p>
-                <div>
-                  <a href="tel:+91-7742070091" style="border: 2px solid #ffffff; padding: 7px 20px; background-color: #5e0000; color: #ffffff; font-weight: 600;">
-                    <i class="bi bi-telephone-fill"></i> +91-7742070091</a>
-                </div>
+              <div>
+                <a href="tel:+91-7742070091"
+                  style="border: 2px solid #ffffff; padding: 7px 20px; background-color: #5e0000; color: #ffffff; font-weight: 600;">
+                  <i class="bi bi-telephone-fill"></i> +91-7742070091</a>
+              </div>
             </div>
           </div>
 
@@ -279,13 +328,14 @@
               <img src="./images/Education-p.jpg" class="img-fluid" alt="Education Problems">
               <h3>Education Problems</h3>
               <p style="color: #000000; font-weight: 600;">
-                The Education Problems Solutions likewise specifies 
-                about getting the correct bearing for advanced education. 
+                The Education Problems Solutions likewise specifies
+                about getting the correct bearing for advanced education.
                 Astrologer is serving the solution to give a superior.</p>
-                <div>
-                  <a href="tel:+91-7742070091" style="border: 2px solid #ffffff; padding: 7px 20px; background-color: #5e0000; color: #ffffff; font-weight: 600;">
-                    <i class="bi bi-telephone-fill"></i> +91-7742070091</a>
-                </div>
+              <div>
+                <a href="tel:+91-7742070091"
+                  style="border: 2px solid #ffffff; padding: 7px 20px; background-color: #5e0000; color: #ffffff; font-weight: 600;">
+                  <i class="bi bi-telephone-fill"></i> +91-7742070091</a>
+              </div>
             </div>
           </div>
 
@@ -294,7 +344,7 @@
       </div>
 
     </section><!-- End Values Section -->
-<!-- <img src="assets/img/gif.gif" width="100%"> -->
+    <!-- <img src="assets/img/gif.gif" width="100%"> -->
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts">
       <div class="container">
@@ -306,7 +356,7 @@
               <i class="bi bi-emoji-smile-fill"></i>
               <div>
                 <span>3.9K</span>
-                  
+
                 <p>Happy Clients</p>
               </div>
             </div>
@@ -317,7 +367,7 @@
               <i class="bi bi-briefcase-fill"></i>
               <div>
                 <span>36+</span>
-                 
+
                 <p>Years of Experience</p>
               </div>
             </div>
@@ -328,7 +378,7 @@
               <i class="bi bi-heart-fill"></i>
               <div>
                 <span>3.7K</span>
-                 
+
                 <p>Love Problem</p>
               </div>
             </div>
@@ -339,7 +389,7 @@
               <i class="bi bi-people-fill"></i>
               <div>
                 <span>3.5K</span>
-                
+
                 <p>Family Problem</p>
               </div>
             </div>
@@ -350,7 +400,8 @@
       </div>
     </section><!-- End Counts Section -->
 
-    <img src="./images/picthree.jpeg" alt="World Famous Astrologer Priyanka Devi Ji +91-7742070091" style="width: 100%;">
+    <img src="./images/picthree.jpeg" alt="World Famous Astrologer Priyanka Devi Ji +91-7742070091"
+      style="width: 100%;">
 
 
     <!-- ======= Other Services Section ======= -->
@@ -360,21 +411,21 @@
 
         <header class="section-header">
           <h2 style="color: #ffffff;">Other Services</h2>
-        
+
         </header>
 
         <div class="row gy-4">
 
           <div class="col-lg-4 col-md-6">
             <div class="box">
-              <h3 style="color: #5e0000;">Expert Services</h3>            
+              <h3 style="color: #5e0000;">Expert Services</h3>
               <ul>
-                <li>  Intercaste Marriage Problem</li>
+                <li> Intercaste Marriage Problem</li>
                 <li> Lost Love Back Solution</li>
                 <li> Ex Love Back Solution</li>
                 <li> Child Problem Solution</li>
-                <li>  Delay In Love Marriage</li>
-                <li>  Love Problem Solution</li>              
+                <li> Delay In Love Marriage</li>
+                <li> Love Problem Solution</li>
               </ul>
               <a href="tel:+91-7742070091" class="btn-buy"><i class="bi bi-telephone-fill"></i> +91-7742070091</a>
             </div>
@@ -385,13 +436,13 @@
               <span class="featured">Astrology</span>
               <h3 style="color: #5e0000;">Best Services
               </h3>
-             
+
               <ul>
                 <li> Relationship Problem Solution</li>
                 <li>Study Problem Solutions</li>
                 <li> Breakup Problem Solution</li>
                 <li> Husband Wife Dispute</li>
-                <li>  Get Your Love Back</li>
+                <li> Get Your Love Back</li>
                 <li> Love Expert Service</li>
               </ul>
               <a href="tel:+91-7742070091" class="btn-buy"><i class="bi bi-telephone-fill"></i> +91-7742070091</a>
@@ -401,11 +452,11 @@
           <div class="col-lg-4 col-md-6">
             <div class="box">
               <h3 style="color: #5e0000;">Famous Services</h3>
-             
+
               <ul>
-                <li>  Family Problem Solution</li>
-                <li>  Back For Husband Solution</li>
-                <li>  Husband Your Control</li>
+                <li> Family Problem Solution</li>
+                <li> Back For Husband Solution</li>
+                <li> Husband Your Control</li>
                 <li> Career Problem Solution</li>
                 <li> Problem For Wife Solution</li>
                 <li> Court Case Problem Solution</li>
@@ -419,102 +470,115 @@
 
     </section>
     <!-- End Other Services Section -->
-    <img src="./images/pictwo.jpeg" class="visible-xs" alt="World Famous Astrologer Priyanka Devi Ji +91-7742070091" style="width: 100%;">
+    <img src="./images/pictwo.jpeg" class="visible-xs" alt="World Famous Astrologer Priyanka Devi Ji +91-7742070091"
+      style="width: 100%;">
 
-   <!-- ======= Top Services Section ======= -->
-   <section id="topservices" class="values">
+    <!-- ======= Top Services Section ======= -->
+    <section id="topservices" class="values">
 
-    <div class="container">
+      <div class="container">
 
-      <header class="section-header">
-        <h2 style="color: #ffffff;">Our Top Services</h2>
-     
-      </header>
+        <header class="section-header">
+          <h2 style="color: #ffffff;">Our Top Services</h2>
 
-      <div class="row">
+        </header>
 
-        <div class="col-lg-4">
-          <div class="box">
-            <img src="./images/lost-love.jpg" class="img-fluid" alt="Lost Love Back" style="border: 3px solid #5e0000;">
-            <h3>Lost Love Back</h3>
-         
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="box">
+              <img src="./images/lost-love.jpg" class="img-fluid" alt="Lost Love Back"
+                style="border: 3px solid #5e0000;">
+              <h3>Lost Love Back</h3>
+
               <div>
-                <a href="tel:+91-7742070091" style="border: 2px solid #ffffff; padding: 5px 15px; background-color: #5e0000; color: #ffffff; font-weight: 600;">
+                <a href="tel:+91-7742070091"
+                  style="border: 2px solid #ffffff; padding: 5px 15px; background-color: #5e0000; color: #ffffff; font-weight: 600;">
                   <i class="bi bi-telephone-fill"></i> +91-7742070091</a>
               </div>
+            </div>
           </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              <img src="./images/Business-Problems.jpg" class="img-fluid" alt="Business Problems"
+                style="border: 3px solid #5e0000;">
+              <h3>Business Problems</h3>
+
+              <div>
+                <a href="tel:+91-7742070091"
+                  style="border: 2px solid #ffffff; padding: 5px 15px; background-color: #5e0000; color: #ffffff; font-weight: 600;">
+                  <i class="bi bi-telephone-fill"></i> +91-7742070091</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              <img src="./images/Parents-Approval.jpg" class="img-fluid" alt="Parents Approval"
+                style="border: 3px solid #5e0000;">
+              <h3>Parents Approval</h3>
+
+              <div>
+                <a href="tel:+91-7742070091"
+                  style="border: 2px solid #ffffff; padding: 5px 15px; background-color: #5e0000; color: #ffffff; font-weight: 600;">
+                  <i class="bi bi-telephone-fill"></i> +91-7742070091</a>
+              </div>
+            </div>
+          </div>
+
         </div>
 
-        <div class="col-lg-4 mt-4 mt-lg-0">
-          <div class="box">
-            <img src="./images/Business-Problems.jpg" class="img-fluid" alt="Business Problems" style="border: 3px solid #5e0000;">
-            <h3>Business Problems</h3>
-           
-              <div>
-                <a href="tel:+91-7742070091" style="border: 2px solid #ffffff; padding: 5px 15px; background-color: #5e0000; color: #ffffff; font-weight: 600;">
-                  <i class="bi bi-telephone-fill"></i> +91-7742070091</a>
-              </div>
-          </div>
-        </div>
+        <div class="row mt-4">
 
-        <div class="col-lg-4 mt-4 mt-lg-0">
-          <div class="box">
-            <img src="./images/Parents-Approval.jpg" class="img-fluid" alt="Parents Approval" style="border: 3px solid #5e0000;">
-            <h3>Parents Approval</h3>
-          
+          <div class="col-lg-4">
+            <div class="box">
+              <img src="./images/Breakup-Problem.jpg" class="img-fluid" alt="Breakup Problem"
+                style="border: 3px solid #5e0000;">
+              <h3>Breakup Problem Solution</h3>
+
               <div>
-                <a href="tel:+91-7742070091" style="border: 2px solid #ffffff; padding: 5px 15px; background-color: #5e0000; color: #ffffff; font-weight: 600;">
+                <a href="tel:+91-7742070091"
+                  style="border: 2px solid #ffffff; padding: 5px 15px; background-color: #5e0000; color: #ffffff; font-weight: 600;">
                   <i class="bi bi-telephone-fill"></i> +91-7742070091</a>
               </div>
+            </div>
           </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              <img src="./images/Ex-Love-Back.jpg" class="img-fluid" alt="Ex Love Back"
+                style="border: 3px solid #5e0000;">
+              <h3>Ex Love Back Solution</h3>
+
+              <div>
+                <a href="tel:+91-7742070091"
+                  style="border: 2px solid #ffffff; padding: 5px 15px; background-color: #5e0000; color: #ffffff; font-weight: 600;">
+                  <i class="bi bi-telephone-fill"></i> +91-7742070091</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              <img src="./images/job-pr.jpg" class="img-fluid" alt="Job Problem Solution"
+                style="border: 3px solid #5e0000;">
+              <h3>Job Problem Solution</h3>
+
+              <div>
+                <a href="tel:+91-7742070091"
+                  style="border: 2px solid #ffffff; padding: 5px 15px; background-color: #5e0000; color: #ffffff; font-weight: 600;">
+                  <i class="bi bi-telephone-fill"></i> +91-7742070091</a>
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
 
-      <div class="row mt-4">
-
-        <div class="col-lg-4">
-          <div class="box">
-            <img src="./images/Breakup-Problem.jpg" class="img-fluid" alt="Breakup Problem" style="border: 3px solid #5e0000;">
-            <h3>Breakup Problem Solution</h3>
-         
-              <div>
-                <a href="tel:+91-7742070091" style="border: 2px solid #ffffff; padding: 5px 15px; background-color: #5e0000; color: #ffffff; font-weight: 600;">
-                  <i class="bi bi-telephone-fill"></i> +91-7742070091</a>
-              </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 mt-4 mt-lg-0">
-          <div class="box">
-            <img src="./images/Ex-Love-Back.jpg" class="img-fluid" alt="Ex Love Back" style="border: 3px solid #5e0000;">
-            <h3>Ex Love Back Solution</h3>
-          
-              <div>
-                <a href="tel:+91-7742070091" style="border: 2px solid #ffffff; padding: 5px 15px; background-color: #5e0000; color: #ffffff; font-weight: 600;">
-                  <i class="bi bi-telephone-fill"></i> +91-7742070091</a>
-              </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 mt-4 mt-lg-0">
-          <div class="box">
-            <img src="./images/job-pr.jpg" class="img-fluid" alt="Job Problem Solution" style="border: 3px solid #5e0000;">
-            <h3>Job Problem Solution</h3>
-           
-              <div>
-                <a href="tel:+91-7742070091" style="border: 2px solid #ffffff; padding: 5px 15px; background-color: #5e0000; color: #ffffff; font-weight: 600;">
-                  <i class="bi bi-telephone-fill"></i> +91-7742070091</a>
-              </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-  <!-- Top Services Section -->
+    </section>
+    <!-- Top Services Section -->
 
 
     <!-- <img src="./images/003.jpg" class="visible-xs" alt="World Famous Astrologer Priyanka Devi Ji +91-7742070091" style="width: 100%;"> -->
@@ -527,7 +591,7 @@
 
         <header class="section-header">
           <h2>CLIENT TESTIMONIALS</h2>
-     
+
         </header>
 
         <div class="testimonials-slider swiper">
@@ -540,12 +604,13 @@
                     class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p style="color: #ffffff;">
-                  "The financial issues have created stress in my family. 
-                  I was depressed and took the help of Astrologer Priyanka Devi Ji. 
+                  "The financial issues have created stress in my family.
+                  I was depressed and took the help of Astrologer Priyanka Devi Ji.
                   She helped to stable the situation by solving financial issues".
                 </p>
                 <div class="profile mt-auto">
-                  <img src="./images/t1.jpg" class="testimonial-img" alt="World Famous Astrologer Priyanka Devi Ji +91-7742070091">
+                  <img src="./images/t1.jpg" class="testimonial-img"
+                    alt="World Famous Astrologer Priyanka Devi Ji +91-7742070091">
                   <h3>Soniya Singh</h3>
                   <h4>Mumbai-India</h4>
                 </div>
@@ -559,13 +624,14 @@
                     class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p style="color: #ffffff;">
-                  "I took the help of Astrologer Priyanka Devi Ji to 
-                  keep my relationship strong. 
-                  She helped me to make my love bond strong and 
-                  give remedy to getting married to a lover". 
+                  "I took the help of Astrologer Priyanka Devi Ji to
+                  keep my relationship strong.
+                  She helped me to make my love bond strong and
+                  give remedy to getting married to a lover".
                 </p>
                 <div class="profile mt-auto">
-                  <img src="./images/t2.jpg" class="testimonial-img" alt="World Famous Astrologer Priyanka Devi Ji +91-7742070091">
+                  <img src="./images/t2.jpg" class="testimonial-img"
+                    alt="World Famous Astrologer Priyanka Devi Ji +91-7742070091">
                   <h3>Ankit Sharma</h3>
                   <h4>Delhi-India</h4>
                 </div>
@@ -579,12 +645,13 @@
                     class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p style="color: #ffffff;">
-                  "I am extremely thankful to Astrologer Priyanka Devi Ji that has 
-                  helped me with my love issues. I am blessed that 
+                  "I am extremely thankful to Astrologer Priyanka Devi Ji that has
+                  helped me with my love issues. I am blessed that
                   she is there for me when my relationship was getting apart".
                 </p>
                 <div class="profile mt-auto">
-                  <img src="./images/t3.jpg" class="testimonial-img" alt="World Famous Astrologer Priyanka Devi Ji +91-7742070091">
+                  <img src="./images/t3.jpg" class="testimonial-img"
+                    alt="World Famous Astrologer Priyanka Devi Ji +91-7742070091">
                   <h3>Aayshi Gupta</h3>
                   <h4>Indore-India</h4>
                 </div>
@@ -598,14 +665,15 @@
                     class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p style="color: #ffffff;">
-                  "Priyanka Devi Ji has helped me in 
-                  saving my love affair from breaking up. 
+                  "Priyanka Devi Ji has helped me in
+                  saving my love affair from breaking up.
                   She has solved my problems and
-                  I am really impressed that her 
+                  I am really impressed that her
                   remedies work like miracles".
                 </p>
                 <div class="profile mt-auto">
-                  <img src="./images/t4.jpg" class="testimonial-img" alt="World Famous Astrologer Priyanka Devi Ji +91-7742070091">
+                  <img src="./images/t4.jpg" class="testimonial-img"
+                    alt="World Famous Astrologer Priyanka Devi Ji +91-7742070091">
                   <h3>Neha</h3>
                   <h4>Pune-India</h4>
                 </div>
@@ -620,7 +688,8 @@
       </div>
 
     </section><!-- End Testimonials Section -->
- <img src="images/certificate.png" alt="World Famous Astrologer Priyanka Devi Ji +91-7742070091" style="width: 100%;">
+    <img src="images/certificate.png" alt="World Famous Astrologer Priyanka Devi Ji +91-7742070091"
+      style="width: 100%;">
 
     <img src="images/pictwo.jpeg" alt="World Famous Astrologer Priyanka Devi Ji +91-7742070091" style="width: 100%;">
 
@@ -631,7 +700,7 @@
 
         <header class="section-header">
           <h2>Contact Us</h2>
-         
+
         </header>
 
         <div class="row gy-4">
@@ -642,30 +711,30 @@
               <div class="col-md-6">
                 <div class="info-box">
                   <a href="tel:+91-7742070091">
-                  <i class="bi bi-telephone-fill"></i>
-                  <h3>Call Us</h3>
-                  <p style="color: #000000;">+91-7742070091</p>
-                </a>
+                    <i class="bi bi-telephone-fill"></i>
+                    <h3>Call Us</h3>
+                    <p style="color: #000000;">+91-7742070091</p>
+                  </a>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box">
                   <a href="https://wa.me/917742070091/?text=Please%20help%20me!">
-                  <i class="bi bi-whatsapp"></i>
-                  <h3>WhatAapp Chat</h3>
-                  <p style="color: #000000;">+91-7742070091</p>
-                </a>
+                    <i class="bi bi-whatsapp"></i>
+                    <h3>WhatAapp Chat</h3>
+                    <p style="color: #000000;">+91-7742070091</p>
+                  </a>
                 </div>
               </div>
-          
-             
-              </div>
-            </div>
 
+
+            </div>
           </div>
 
-
         </div>
+
+
+      </div>
 
       </div>
 
@@ -682,22 +751,22 @@
         <div class="row gy-4">
           <div class="col-lg-3 col-md-12 footer-info">
             <a href="tel:+91-7742070091" class="logo d-flex align-items-center">
-             
+
               <h4>Famous Priyanka Devi Ji</h4>
             </a>
-            <p>In Astrology, Priyanka Devi Ji has a great name 
-              for the work which she has done for the goodwill of 
-              the people. Astrology actually is very tough to 
-              learn but her childhood interest makes her 
+            <p>In Astrology, Priyanka Devi Ji has a great name
+              for the work which she has done for the goodwill of
+              the people. Astrology actually is very tough to
+              learn but her childhood interest makes her
               to become proficient in this science.</p>
-          
+
           </div>
 
           <div class="col-lg-3 col-6 footer-links">
             <h4>Best Services</h4>
             <ul>
               <li><i class="bi bi-chevron-right"></i> <a href="tel:+91-7742070091"> Love Marriage Specialist</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="tel:+91-7742070091">  Love Back Specialist</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="tel:+91-7742070091"> Love Back Specialist</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="tel:+91-7742070091"> Family Problem Solution</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="tel:+91-7742070091">Job Problem Solution</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="tel:+91-7742070091"> Gf/Bf Problem Solution</a></li>
@@ -718,7 +787,7 @@
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
             <h4>Contact Us</h4>
             <p style="color: #ffffff;">
-            
+
               <strong><i class="bi bi-telephone-fill"></i></strong> +91-7742070091<br>
               <strong><i class="bi bi-whatsapp"></i></strong> +91-7742070091<br>
             </p>
@@ -743,120 +812,166 @@
   <div class="call">
     <a href="tel:+91-7742070091" style="color: #fff" title="Contact"><i class="bi bi-phone-vibrate element2"></i></a>
   </div>
-  
+
   <div class="whatsapp">
-    <a href="https://wa.me/917742070091/?text=Please%20help%20me!" style="color: #fff" title="Whatsapp"><i class="bi bi-whatsapp element2"></i></a>
+    <a href="https://wa.me/917742070091/?text=Please%20help%20me!" style="color: #fff" title="Whatsapp"><i
+        class="bi bi-whatsapp element2"></i></a>
   </div>
-  
+
   <style>
-    @keyframes pulsate
-    {
-      0%
-      {
+    @keyframes pulsate {
+      0% {
         transform: scale(0.9, 0.9);
         opacity: 1;
       }
-  
-      50%
-      {
+
+      50% {
         transform: scale(1.2, 1.2);
         opacity: 1;
       }
-  
-      100%
-      {
+
+      100% {
         transform: scale(0.9, 0.9);
         opacity: 1;
       }
     }
-  
-    @keyframes callb
-    {
-      0%
-      {
+
+    @keyframes callb {
+      0% {
         transform: scale(0.9);
       }
-  
-      20%
-      {
+
+      20% {
         transform: scale(1);
       }
-  
-      40%
-      {
+
+      40% {
         transform: scale(1.1);
       }
-  
-      60%
-      {
+
+      60% {
         transform: scale(1.2);
       }
-  
-      80%
-      {
+
+      80% {
         transform: scale(1.3);
       }
-  
-      100%
-      {
+
+      100% {
         transform: scale(1.4);
       }
     }
-  
-    @keyframes calla
-    {
-      0%
-      {
+
+    @keyframes calla {
+      0% {
         box-shadow: 0px 0px 0px 4px rgba(162, 162, 162, 0.8);
       }
-  
-      20%
-      {
+
+      20% {
         box-shadow: 0px 0px 0px 6px rgba(162, 162, 162, 0.6);
       }
-  
-      40%
-      {
+
+      40% {
         box-shadow: 0px 0px 0px 8px rgba(162, 162, 162, 0.4);
       }
-  
-      60%
-      {
+
+      60% {
         box-shadow: 0px 0px 0px 10px rgba(162, 162, 162, 0.2);
       }
-  
-      80%
-      {
+
+      80% {
         box-shadow: 0px 0px 0px 12px rgba(162, 162, 162, 0.1);
       }
-  
-      100%
-      {
+
+      100% {
         box-shadow: 0px 0px 0px 14px rgba(162, 162, 162, 0);
       }
     }
-    .call
-    {
-      position: fixed; z-index: 999999; left: 20px; bottom: 30px; display: inline; font-size: 30px; text-align: center; height: 60px; width: 60px; border-radius: 1px solid #000; animation-name: calla; animation-duration: 0.8s; animation-iteration-count: infinite; background: #5e0000; line-height: 60px; border-radius: 50%;
+
+    .call {
+      position: fixed;
+      z-index: 999999;
+      left: 20px;
+      bottom: 30px;
+      display: inline;
+      font-size: 30px;
+      text-align: center;
+      height: 60px;
+      width: 60px;
+      border-radius: 1px solid #000;
+      animation-name: calla;
+      animation-duration: 0.8s;
+      animation-iteration-count: infinite;
+      background: #5e0000;
+      line-height: 60px;
+      border-radius: 50%;
     }
-    .whatsapp
-    {
-      position: fixed; z-index: 999999; right: 20px; bottom: 30px; display: inline; font-size: 30px; text-align: center; height: 60px; width: 60px; border-radius: 1px solid #000; animation-name: calla; animation-duration: 0.8s; animation-iteration-count: infinite; background: #03A437; line-height: 60px; border-radius: 50%;
+
+    .whatsapp {
+      position: fixed;
+      z-index: 999999;
+      right: 20px;
+      bottom: 30px;
+      display: inline;
+      font-size: 30px;
+      text-align: center;
+      height: 60px;
+      width: 60px;
+      border-radius: 1px solid #000;
+      animation-name: calla;
+      animation-duration: 0.8s;
+      animation-iteration-count: infinite;
+      background: #03A437;
+      line-height: 60px;
+      border-radius: 50%;
     }
   </style>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var swiper = new Swiper(".testimonials-slider", {
+    loop: true,
+    spaceBetween: 30,
+    speed: 800,
+
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1
+      },
+      768: {
+        slidesPerView: 2
+      },
+      1024: {
+        slidesPerView: 3
+      }
+    }
+  });
+});
+</script>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="./purecounter_vanilla.js"></script>
+  <script src="./bootstrap.bundle.min.js"></script>
+  <script src="./glightbox.min.js"></script>
+  <script src="./isotope.pkgd.min.js"></script>
+  <script src="./swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="./main.js"></script>
 
 </body>
+
 </html>
